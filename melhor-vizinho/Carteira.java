@@ -41,7 +41,7 @@ public class Carteira {
 		nomeAcoes[8] = 'I';
 		nomeAcoes[9] = 'J';
 	}
-	
+	//teste
 	public double[] GetMelhorVizinho(double aCarteira[]) {
 		double arrVizinhos[][] = new double[35][10];
 		
@@ -108,10 +108,10 @@ public class Carteira {
 		Random random = new Random();
 		
 		for (int i=0; i < retorno.length; i++) {
-			//sorteia um índice
+			//sorteia um Ã­ndice
 			int j = random.nextInt(retorno.length); 
 			
-			//troca o conteúdo dos índices i e j do vetor
+			//troca o conteÃºdo dos Ã­ndices i e j do vetor
 			double aux = retorno[i];
 			retorno[i] = retorno[j];
 			retorno[j] = aux;
@@ -136,7 +136,7 @@ public class Carteira {
 		
 		carteira.SetCarteiraInicial();
 		
-		//Exibição da Carteira Inicial
+		//ExibiÃ§Ã£o da Carteira Inicial
 		System.out.println("- Carteira Inicial -");
 		for(int i = 0; i < carteira.carteiraInicial.length; i++) {
 			if(i==0) {
@@ -152,7 +152,7 @@ public class Carteira {
 		
 		melhorVizinho = carteira.GetMelhorVizinho(carteira.carteiraInicial.clone());
 				
-		//Exibição do melhor vizinho
+		//ExibiÃ§Ã£o do melhor vizinho
 		strPercentuais = "";
 		System.out.println("\n - Melhor Vizinho -");
 		for(int i = 0; i < melhorVizinho.length; i++) {
@@ -168,7 +168,7 @@ public class Carteira {
 		System.out.println("\n- Retorno do melhor Vizinho da Carteira inicial - ");
 		for(int i=0; i < melhorVizinho.length; i++) {
 			System.out.println(
-			"Ação " + Character.toString(carteira.nomeAcoes[i]) + "\tAplicacao de : " + Double.toString(melhorVizinho[i] * 100) + "%" +
+			"AÃ§Ã£o " + Character.toString(carteira.nomeAcoes[i]) + "\tAplicacao de : " + Double.toString(melhorVizinho[i] * 100) + "%" +
 			"\tRetorno de: " + Double.toString(melhorVizinho[i] * carteira.retornosMeses[i]) );
 		}
 		System.out.println("Total: " + carteira.GetValorTotalCarteira(melhorVizinho));
@@ -182,9 +182,9 @@ public class Carteira {
 			//Sorteio da Carteira
 			sorteada = carteira.SortearCarteira(carteira.carteiraInicial.clone());
 			
-			System.out.println("\n\n**********" + s + "º Sorteio**********\n");
+			System.out.println("\n\n**********" + s + "Âº Sorteio**********\n");
 			
-			//Exibição do sorteio
+			//ExibiÃ§Ã£o do sorteio
 			strPercentuais = "";
 			System.out.println("\n - Carteira Sorteada -");
 			for(int i = 0; i < sorteada.length; i++) {
@@ -200,7 +200,7 @@ public class Carteira {
 			melhorVizinho = carteira.GetMelhorVizinho(sorteada);
 			
 			
-			//Exibição da Melhor Vizinho da Carteira Sorteada
+			//ExibiÃ§Ã£o da Melhor Vizinho da Carteira Sorteada
 			strPercentuais = "";
 			System.out.println("\n - Melhor Vizinho da Carteira Sorteada -");
 			for(int i = 0; i < sorteada.length; i++) {
@@ -220,7 +220,7 @@ public class Carteira {
 			System.out.println("\n - Retorno do melhor vizinho da Carteira sorteada - ");
 			for(int i=0; i < melhorVizinho.length; i++) {
 				System.out.println(
-				"Ação " + Character.toString(carteira.nomeAcoes[i]) + "\tAplicacao de : " + Double.toString(melhorVizinho[i] * 100) + "%" +
+				"AÃ§Ã£o " + Character.toString(carteira.nomeAcoes[i]) + "\tAplicacao de : " + Double.toString(melhorVizinho[i] * 100) + "%" +
 				"\tRetorno de: " + Double.toString(melhorVizinho[i] * carteira.retornosMeses[i]) );
 			}
 			System.out.println("Total: " + carteira.GetValorTotalCarteira(melhorVizinho));
