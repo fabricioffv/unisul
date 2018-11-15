@@ -1,0 +1,42 @@
+@media (min-width: 501px) {
+	.form{
+		position: absolute;
+		width: 50%;
+		margin-top: 5%;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.form{
+		position: absolute;
+		width: 90%;
+		margin-top: 5%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+
+#titulo-site{
+	font-size: 40px;
+	color: purple;
+}
+
+//MENU
+
+
+navbar *{
+	border-radius: 0;!important
+}
+
+.left {
+  float: left;
+  margin-left: 13px;
+}
+.glyphicon-search {
+	color: #fff;
+}
+.mobile_search {
+	margin: 6px 0 5px 0;
+}

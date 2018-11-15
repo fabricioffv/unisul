@@ -1,0 +1,48 @@
+@charset "ISO-8859-1";
+
+
+.imgBanner{
+	border: 5px solid;
+	border-radius: 10px;
+	display: block;
+	margin: 0 auto;
+	width:80%;
+	margin-top: 5%;
+}
+
+@media (max-width: 480px) {
+ /* estilos aqui */
+}
+
+
+@media (max-width: 800px) {
+	#Carousel{
+		display:none;
+	}
+	
+	#Galeria{
+		display:block;
+	}	
+}
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+ /* estilos aqui */
+}
+
+
+/* Desktop grande */
+@media (min-width: 801px) {
+	#Carousel{
+		display:block;
+	}
+	
+	#Galeria{
+		display:none;
+	}
+}
+
+
+*@media screen and (min-width: 1px) {
+
+}
